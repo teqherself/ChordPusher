@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- USB device filter: match any USB MIDI device (class 1 = Audio, subclass 3 = MIDI) -->
+<resources>
+    <usb-device class="1" subclass="3" />
+    <!-- Also match vendor-specific MIDI devices -->
+    <usb-device />
+</resources>
