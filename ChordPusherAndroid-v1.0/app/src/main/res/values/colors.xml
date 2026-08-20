@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0F0F1A</color>
+    <color name="bg_panel">#1A1A2E</color>
+    <color name="accent_red">#E94560</color>
+    <color name="accent_blue">#16213E</color>
+    <color name="pad_default">#2D2D4E</color>
+    <color name="pad_active">#E94560</color>
+    <color name="pad_note_on">#FF6B35</color>
+    <color name="pad_drum_default">#1E3A5F</color>
+    <color name="pad_drum_active">#4A90D9</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8892B0</color>
+    <color name="status_connected">#64FFDA</color>
+    <color name="status_disconnected">#FF5370</color>
+</resources>

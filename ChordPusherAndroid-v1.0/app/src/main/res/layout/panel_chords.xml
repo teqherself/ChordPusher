@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Chord Pads Panel
+  8 columns x 4 rows = 32 chord pads + left sidebar for octave/velocity controls
+  MIDI notes mapped to Ableton Push 2 grid layout (notes 36-67 in 4x8 grid)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/bg_dark"
+    android:padding="8dp">
+
+    <!-- Left sidebar: octave & velocity -->
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/bg_panel"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/octave_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnOctaveUp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="▲"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/pad_chord"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvOctave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@color/accent_red"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginVertical="4dp" />
+
+        <Button
+            android:id="@+id/btnOctaveDown"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="▼"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/pad_chord" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_dark"
+            android:layout_marginVertical="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/velocity_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvVelocity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/accent_red"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginVertical="4dp" />
+
+        <SeekBar
+            android:id="@+id/seekVelocity"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:max="127"
+            android:progress="100"
+            android:rotation="270" />
+
+    </LinearLayout>
+
+    <!-- Chord pad grid: 8 columns x 4 rows -->
+    <GridLayout
+        android:id="@+id/chordGrid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:columnCount="8"
+        android:rowCount="4"
+        android:layout_marginStart="8dp"
+        android:useDefaultMargins="false">
+
+        <!-- Pads are added programmatically by MainActivity -->
+
+    </GridLayout>
+
+</LinearLayout>

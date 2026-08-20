@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChordPusher</string>
+    <string name="status_disconnected">MIDI: Not connected</string>
+    <string name="status_connected">MIDI: Connected</string>
+    <string name="tab_chords">CHORDS</string>
+    <string name="tab_drums">DRUMS</string>
+    <string name="tab_settings">SETTINGS</string>
+    <string name="octave_label">OCT</string>
+    <string name="velocity_label">VEL</string>
+    <string name="channel_label">CH</string>
+</resources>
